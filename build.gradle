@@ -11,6 +11,8 @@ dependencies {
 }
 
 test {
+	compileJava.options.encoding = "UTF-8"
+	compileTestJava.options.encoding = "UTF-8"
 	useJUnitPlatform()
 	testLogging {
 		events "passed", "skipped", "failed"
