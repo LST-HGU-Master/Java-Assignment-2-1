@@ -1,14 +1,32 @@
-# Autograding Example: Java
-This example project is written in Java, and tested with Gradle/JUnit.
+# 課題 2-1
+式と演算子
 
-### The assignment
-The tests are currently failing because of an output mismatch. Fixing the `System.out.println` in the main method will make the tests green.
+### 課題の説明
+次のプログラムを修正し、正しい実行結果が得られるプログラムにせよ。
 
-### Setup command
-N/A
+修正前のプログラム
+``` java
+public class Prog21 {
+    public static void main(String[] args) { int x=2;
+        int y=7;
+        String sikiA = "x+y = "; String sikiB = "y/x = ";
+        System.out.println("x=" + 2 + ",y=" + 7 +"とすると、");
+        System.out.println(sikiA + x+y);
+        System.out.println(sikiB + y/x);
+    }
+}
+```
 
-### Run command
-`gradle test`
+修正前の実行結果
+```
+x=2,y=7とすると、
+x+y = 27
+y/x = 3
+```
 
-### Notes
-- The JDK is installed on GitHub Actions machines, so you're also able to directly invoke `javac`, `java`, or any other CLI command included in the JDK. 
+正しい実行結果
+```
+x=2,y=7とすると、
+x+y = 9
+y/x = 3.5
+```
