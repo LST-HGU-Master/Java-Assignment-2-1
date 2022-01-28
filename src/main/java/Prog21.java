@@ -6,6 +6,6 @@ public class Prog21 {
         String sikiB = "y/x = ";
         System.out.println("x=" + 2 + ",y=" + 7 +"とすると、");
         System.out.println(sikiA + x+y);
-        System.out.println(sikiB + y/x);
+        System.out.println(sikiB + (double)y/x);
     }
 }
